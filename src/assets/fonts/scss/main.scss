@@ -1,0 +1,49 @@
+@import "fonts";
+@import "variables";
+@import "utilities";
+@import "functions";
+@import "media";
+
+//Reset CSS
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family-ir_sans;
+  line-height: 1.6;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul {
+  list-style: none;
+}
+
+#header {
+  background: rgb(238, 209, 209);
+  height: auto;
+  margin: 0;
+  padding: 0.5rem;
+  //box-shadow: 1px 1px 1px rgb(216, 145, 145);
+  flex-flow: row wrap;
+}
+
+
+
+.jc-center {
+  justify-content: center;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.radius-circle {
+  border-radius: 50%;
+}

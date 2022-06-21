@@ -1,0 +1,45 @@
+//breakpoints
+//Extra small :         < 576
+//Small :               ≥ 576 px
+//Medium :              ≥ 768px
+//large :               ≥ 992px
+//Extra large :         ≥ 1200px
+//Extra extra large :   ≥ 1400px
+$small : 576px;
+$medium : 768px;
+$large : 992px;
+
+.smth {
+
+    //some CSS
+    @media screen and (min-width: $small) {}
+
+    @media screen and (max-width : $medium) {}
+
+    @media screen and (min-width: $medium) {}
+
+    @media screen and (min-width: $large) {
+        #header {
+            box-shadow: 1px 1px 1px rgb(216, 145, 145);
+        }
+
+        .navbar-expand-lg {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin: 0.5rem;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        #header {
+            flex-flow: column-reverse wrap;
+        }
+
+        width: 100%;
+
+        .border-b {
+            border-bottom: 1px solid #eee;
+        }
+    }
+
+}
