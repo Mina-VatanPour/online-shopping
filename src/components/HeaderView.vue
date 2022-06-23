@@ -7,7 +7,7 @@
         <!-- Brand -->
         <div class="row w-100">
           <div class="col-3 col-md-2 ms-4">
-            <a
+            <router-link
               class="
                 navbar-brand
                 d-flex
@@ -15,14 +15,14 @@
                 justify-content-center
                 pt-0
               "
-              href="#"
+              :to="{ name: 'home' }"
             >
               <img
                 :src="require('@/assets/img/logo.png')"
                 class="img-fluid w-50 d-flex"
                 alt=""
               />
-            </a>
+            </router-link>
           </div>
           <!-- Toggler -->
           <button
@@ -58,13 +58,14 @@
               <ul
                 class="navbar-nav mx-auto d-flex align-items-center text-dark"
               >
+                <!-- home -->
                 <li class="nav-item b-bottom">
-                  <a class="nav-link" href="docs/home.html">
+                  <router-link class="nav-link" :to="{ name: 'home' }">
                     <i class="bi bi-house-door me-1"></i>
-                    خانه</a
+                    خانه</router-link
                   >
                 </li>
-
+                <!-- catalog -->
                 <li
                   class="
                     nav-item
@@ -76,14 +77,14 @@
                   "
                 >
                   <!-- Toggle -->
-                  <a
+                  <router-link
                     class="nav-link"
                     data-bs-toggle="dropdown"
-                    href="#"
+                    :to="{ name: 'catalog' }"
                     aria-expanded="false"
                   >
                     <i class="bi bi-tags me-1"></i>
-                    کاتالوگ</a
+                    کاتالوگ</router-link
                   >
 
                   <!-- Menu -->
@@ -97,7 +98,7 @@
                             <nav
                               class="
                                 nav nav-tabs nav-overflow
-                                fs-xs
+                                font-md
                                 border-bottom border-bottom-lg-0
                               "
                             >
@@ -106,21 +107,21 @@
                                 data-bs-toggle="tab"
                                 href="#navTab"
                               >
-                                Women
+                                زنانه
                               </a>
                               <a
                                 class="nav-link text-uppercase"
                                 data-bs-toggle="tab"
                                 href="#navTab"
                               >
-                                Men
+                                مردانه
                               </a>
                               <a
                                 class="nav-link text-uppercase"
                                 data-bs-toggle="tab"
                                 href="#navTab"
                               >
-                                Kids
+                                بچه گانه
                               </a>
                             </nav>
                           </div>
@@ -128,326 +129,18 @@
                       </div>
                     </div>
 
-                    <!-- Tab content -->
+                    <!-- Tab content read from ../view/catalog/index/clothing/ShowClothing.vue -->
                     <div class="card card-lg">
                       <div class="card-body">
                         <div class="tab-content">
                           <div class="tab-pane fade show active" id="navTab">
                             <div class="container">
                               <div class="row">
-                                <div class="col-6 col-md">
-                                  <!-- Heading -->
-                                  <div
-                                    class="mb-3 fw-bold bg-light ps-3 shadow-sm"
-                                  >
-                                    Clothing
-                                  </div>
-
-                                  <!-- Links -->
-                                  <ul class="list-styled mb-6 mb-md-0 fs-sm">
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >All Clothing</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Blouses &amp; Shirts</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Coats &amp; Jackets</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Dresses</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Hoodies &amp; Sweats</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Denim</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Jeans</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Jumpers &amp; Cardigans</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Leggings</a
-                                      >
-                                    </li>
-                                  </ul>
-                                </div>
-                                <div class="col-6 col-md">
-                                  <!-- Heading -->
-                                  <div
-                                    class="mb-3 fw-bold bg-light ps-3 shadow-sm"
-                                  >
-                                    Shoes &amp; Boots
-                                  </div>
-
-                                  <!-- Links -->
-                                  <ul class="list-styled mb-6 mb-md-0 fs-sm">
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >All Shoes &amp; Boots</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Branded Shoes</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Boots</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Heels</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Trainers</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Sandals</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Shoes</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Wide Fit Shoes</a
-                                      >
-                                    </li>
-                                  </ul>
-                                </div>
-                                <div class="col-6 col-md">
-                                  <!-- Heading -->
-                                  <div
-                                    class="mb-3 fw-bold bg-light ps-3 shadow-sm"
-                                  >
-                                    Bags &amp; Accessories
-                                  </div>
-
-                                  <!-- Links -->
-                                  <ul class="list-styled mb-0 fs-sm">
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >All Bags &amp; Accessories</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Accessories</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Bags &amp; Purses</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Luggage</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Belts</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Hats</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Hair Accessories</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Jewellery</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Travel Accessories</a
-                                      >
-                                    </li>
-                                  </ul>
-                                </div>
-                                <div class="col-6 col-md">
-                                  <!-- Heading -->
-                                  <div
-                                    class="mb-3 fw-bold bg-light ps-3 shadow-sm"
-                                  >
-                                    Collections
-                                  </div>
-
-                                  <!-- Links -->
-                                  <ul class="list-styled mb-0 fs-sm">
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >All Collections</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Occasionwear</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Going Out</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Workwear</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Holiday Shop</a
-                                      >
-                                    </li>
-                                    <li class="list-styled-item">
-                                      <a
-                                        class="list-styled-link"
-                                        href="./shop.html"
-                                        >Jean Fit Guide</a
-                                      >
-                                    </li>
-                                  </ul>
-                                </div>
-                                <div class="col-4 d-none d-lg-block">
-                                  <!-- Card -->
-                                  <div class="card">
-                                    <!-- Image -->
-                                    <img
-                                      class="card-img img-fluid"
-                                      :src="require('@/assets/img/catalog.jpg')"
-                                      alt="..."
-                                    />
-
-                                    <!-- Overlay -->
-                                    <div
-                                      class="
-                                        card-img-overlay
-                                        bg-dark-0 bg-hover
-                                        d-flex
-                                        align-items-center
-                                        justify-content-center
-                                      "
-                                    >
-                                      <div
-                                        class="
-                                          text-center
-                                          mb-3
-                                          fw-bold
-                                          bg-light
-                                          ps-3
-                                          shadow-sm
-                                        "
-                                      >
-                                        <a
-                                          class="btn btn-white stretched-link"
-                                          href="./shop.html"
-                                        >
-                                          Shop Sweaters
-                                          <i class="fe fe-arrow-right ms-2"></i>
-                                        </a>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
+                                <ShowClothing />
+                                <ShowShoes />
+                                <ShowBags />
+                                <ShowCollections />
+                                <ShopSweaters />
                               </div>
                             </div>
                           </div>
@@ -456,6 +149,7 @@
                     </div>
                   </div>
                 </li>
+                <!-- store -->
                 <li
                   class="
                     nav-item
@@ -467,14 +161,14 @@
                   "
                 >
                   <!-- Toggle -->
-                  <a
+                  <router-link
                     class="nav-link"
                     data-bs-toggle="dropdown"
-                    href="#"
+                    :to="{ name: 'store' }"
                     aria-expanded="false"
                   >
                     <i class="bi bi-shop me-1"></i>
-                    فروشگاه</a
+                    فروشگاه</router-link
                   >
 
                   <!-- Menu -->
@@ -483,355 +177,55 @@
                       <div class="card-body">
                         <div class="row">
                           <div class="col">
-                            <!-- Heading -->
-                            <div class="mb-3 fw-bold bg-light shadow-sm ps-3">
-                              Shop
-                            </div>
-
-                            <!-- Links -->
-                            <ul class="list-styled mb-7 fs-sm">
-                              <li class="list-styled-item">
-                                <a class="list-styled-link" href="./shop.html"
-                                  >Default</a
-                                >
-                              </li>
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  href="./shop-topbar.html"
-                                  >Topbar</a
-                                >
-                              </li>
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  href="./shop-collapse.html"
-                                  >Collapse</a
-                                >
-                              </li>
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  href="./shop-simple.html"
-                                  >Simple</a
-                                >
-                              </li>
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  href="./shop-masonry.html"
-                                  >Masonry</a
-                                >
-                              </li>
-                            </ul>
-
-                            <!-- Heading -->
-                            <div class="mb-3 fw-bold bg-light shadow-sm ps-3">
-                              Product
-                            </div>
-
-                            <!-- Links -->
-                            <ul class="list-styled fs-sm">
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  href="./product.html"
-                                  >Default</a
-                                >
-                              </li>
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  href="./product-images-left.html"
-                                  >Images Left</a
-                                >
-                              </li>
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  href="./product-image-grid.html"
-                                  >Image Grid</a
-                                >
-                              </li>
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  href="./product-image-slider.html"
-                                  >Image Slider</a
-                                >
-                              </li>
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  href="./product-images-stacked.html"
-                                  >Images Stacked</a
-                                >
-                              </li>
-                            </ul>
+                            <ShowShop />
+                            <ShowProduct />
                           </div>
                           <div class="col">
-                            <!-- Heading -->
-                            <div class="mb-3 fw-bold bg-light shadow-sm ps-3">
-                              Support
-                            </div>
-
-                            <!-- Links -->
-                            <ul class="list-styled mb-7 fs-sm">
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  href="./shopping-cart.html"
-                                  >Shopping Cart</a
-                                >
-                              </li>
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  href="./checkout.html"
-                                  >Checkout</a
-                                >
-                              </li>
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  href="./order-completed.html"
-                                  >Order Completed</a
-                                >
-                              </li>
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  href="./shipping-and-returns.html"
-                                  >Shipping &amp; Returns</a
-                                >
-                              </li>
-                            </ul>
-
-                            <!-- Heading -->
-                            <div class="mb-3 fw-bold bg-light shadow-sm ps-3">
-                              Account
-                            </div>
-
-                            <!-- Links -->
-                            <ul class="list-styled fs-sm">
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  href="./account-order.html"
-                                  >Order</a
-                                >
-                              </li>
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  href="./account-orders.html"
-                                  >Orders</a
-                                >
-                              </li>
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  href="./account-wishlist.html"
-                                  >Wishlist</a
-                                >
-                              </li>
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  href="./account-personal-info.html"
-                                  >Personal Info</a
-                                >
-                              </li>
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  href="./account-address.html"
-                                  >Addresses</a
-                                >
-                              </li>
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  href="./account-address-edit.html"
-                                  >Addresses: New</a
-                                >
-                              </li>
-                            </ul>
+                            <ShowSupport />
+                            <ShowModals />
                           </div>
                           <div class="col">
-                            <!-- Links -->
-                            <ul class="list-styled mb-7 fs-sm">
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  href="./account-payment.html"
-                                  >Payment</a
-                                >
-                              </li>
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  href="./account-payment-edit.html"
-                                  >Payment: New</a
-                                >
-                              </li>
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  href="./account-payment-choose.html"
-                                  >Payment: Choose</a
-                                >
-                              </li>
-                              <li class="list-styled-item">
-                                <a class="list-styled-link" href="./auth.html"
-                                  >Auth</a
-                                >
-                              </li>
-                            </ul>
-
-                            <!-- Heading -->
-                            <div class="mb-3 fw-bold bg-light shadow-sm ps-3">
-                              Modals
-                            </div>
-
-                            <!-- Links -->
-                            <ul class="list-styled fs-sm">
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  data-bs-toggle="modal"
-                                  href="#modalNewsletterHorizontal"
-                                >
-                                  Newsletter: Horizontal
-                                </a>
-                              </li>
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  data-bs-toggle="modal"
-                                  href="#modalNewsletterVertical"
-                                >
-                                  Newsletter: Vertical
-                                </a>
-                              </li>
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  data-bs-toggle="modal"
-                                  href="#modalProduct"
-                                >
-                                  Product
-                                </a>
-                              </li>
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  data-bs-toggle="offcanvas"
-                                  href="#modalSearch"
-                                >
-                                  Search
-                                </a>
-                              </li>
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  data-bs-toggle="offcanvas"
-                                  href="#modalShoppingCart"
-                                >
-                                  Shopping Cart
-                                </a>
-                              </li>
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  data-bs-toggle="modal"
-                                  href="#modalSizeChart"
-                                >
-                                  Size Chart
-                                </a>
-                              </li>
-                              <li class="list-styled-item">
-                                <a
-                                  class="list-styled-link"
-                                  data-bs-toggle="modal"
-                                  href="#modalWaitList"
-                                >
-                                  Wait List
-                                </a>
-                              </li>
-                            </ul>
+                            <ShowAccount />
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
+                <!-- pages -->
                 <li class="nav-item dropdown hovered mx-2 b-bottom">
                   <!-- Toggle -->
-                  <a
+                  <router-link
                     class="nav-link"
                     data-bs-toggle="dropdown"
-                    href="#"
+                    :to="{ name: 'pages' }"
                     aria-expanded="false"
                   >
                     <i class="bi bi-file-break me-1"></i>
-                    صفحات</a
+                    صفحات</router-link
                   >
 
                   <!-- Menu -->
                   <div class="dropdown-menu py-0 shadow">
                     <div class="card card-lg">
                       <div class="card-body">
-                        <ul class="list-styled fs-sm">
-                          <li class="list-styled-item">
-                            <a class="list-styled-link" href="./about.html"
-                              >About</a
-                            >
-                          </li>
-                          <li class="list-styled-item">
-                            <a class="list-styled-link" href="./contact-us.html"
-                              >Contact Us</a
-                            >
-                          </li>
-                          <li class="list-styled-item">
-                            <a
-                              class="list-styled-link"
-                              href="./store-locator.html"
-                              >Store Locator</a
-                            >
-                          </li>
-                          <li class="list-styled-item">
-                            <a class="list-styled-link" href="./faq.html"
-                              >FAQ</a
-                            >
-                          </li>
-                          <li class="list-styled-item">
-                            <a
-                              class="list-styled-link"
-                              href="./coming-soon.html"
-                              >Coming Soon</a
-                            >
-                          </li>
-                          <li class="list-styled-item">
-                            <a class="list-styled-link" href="./404.html"
-                              >404</a
-                            >
-                          </li>
-                        </ul>
+                       <ShowPages />
                       </div>
                     </div>
                   </div>
                 </li>
+                <!-- weblog -->
                 <li class="nav-item b-bottom">
-                  <a class="nav-link" href="./blog.html">
+                  <router-link class="nav-link" :to="{ name: 'weblog' }">
                     <i class="bi bi-layout-text-window me-1"></i>
-                    وبلاگ</a
+                    وبلاگ</router-link
                   >
                 </li>
+                <!-- document -->
                 <li class="nav-item b-bottom">
-                  <a class="nav-link" href="docs/getting-started.html">
+                  <router-link class="nav-link" :to="{ name: 'document' }">
                     <i class="bi bi-file-earmark-bar-graph me-1"></i>
-                    داکیومنت ها</a
+                    داکیومنت ها</router-link
                   >
                 </li>
               </ul>
@@ -881,16 +275,46 @@
 </template>
 
 <script>
+// catalog
+import ShowClothing from "@/views/catalog/index/clothing/ShowClothing.vue";
+import ShowShoes from "@/views/catalog/index/shoes/ShowShoes.vue";
+import ShowBags from "@/views/catalog/index/bags/ShowBags.vue";
+import ShowCollections from "@/views/catalog/index/collections/ShowCollections.vue";
+import ShopSweaters from "@/views/catalog/index/shopsweaters/ShopSweaters.vue";
+// shop
+import ShowShop from "../views/store/index/shop/ShowShop.vue";
+import ShowProduct from "../views/store/index/product/ShowProduct.vue";
+import ShowSupport from "../views/store/index/support/ShowSupport.vue";
+import ShowAccount from "../views/store/index/account/ShowAccount.vue";
+import ShowModals from "../views/store/index/modals/ShowModals.vue";
+import ShowPages from "../views/pages/ShowPages.vue";
+      
+// pages 
 export default {
   name: "HeaderView",
+  components: {
+    // catalog
+    ShowClothing,
+    ShowShoes,
+    ShowBags,
+    ShowCollections,
+    ShopSweaters,
+    // shop
+    ShowShop,
+    ShowProduct,
+    ShowSupport,
+    ShowAccount,
+    ShowModals,
+    ShowPages
+},
 };
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+<style lang="scss">
 .b-bottom:hover {
   border-bottom: 1px solid red;
 }
-a:hover {
+.list-styled-link:hover {
   color: red;
 }
 // .nav-link.active {

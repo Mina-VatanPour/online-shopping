@@ -2,13 +2,13 @@
   <footer class="bg-dark bg-cover position-relative">
     <img :src="require('@/assets/img/footer/pattern.svg')" class="img-fluid" />
     <div
-      class="border-bottom border-gray-700 card-img-overlay position-absolut"
+      class="border-bottom card-img-overlay position-absolut"
     >
-      <div class="container p-4">
+      <div class="container py-4">
         <div class="row justify-content-center p-5">
           <div class="col-12 col-md-10 col-lg-8 col-xl-6">
             <!-- Heading -->
-            <h6 class="mb-4 text-center text-white">
+            <h6 class="mb-5 text-center text-white">
               آیا تمایل دارید ایده هایتان را با ما در میان بگذارید ؟
             </h6>
 
@@ -165,7 +165,7 @@
         </div>
       </div>
     </div>
-    <div class="position-absolut card-img-overlay align-items-end">
+    <div class="position-absolut card-img-overlay py-0" style="top: 500px">
       <div class="container">
         <div class="row">
           <div class="col">
