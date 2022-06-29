@@ -52,36 +52,36 @@
                   <span class="font-sm">جدید</span>
                 </span>
                 <!-- Image -->
-                <div class="card-img hover item-fade">
+                <div class="card-img">
                   <!-- Image -->
-                  <a class="card-img-hover" href="product.html">
+                  <a class="" href="product.html">
                     <img
-                      class="card-img-top card-img-back"
+                      class="img-fluid"
                       :src="require('@/assets/img/top-seller/product-1.jpg')"
                       alt="..."
                     />
                   </a>
 
                   <!-- Actions -->
-                  <div class="card-actions d-flex justify-content-center">
-                    <span class="card-action">
+                  <div class="card-actions card-img-overlay text-center h-25">
+                    <span class="card-action mx-1">
                       <button
-                        class="btn btn-xs btn-circle btn-white-primary"
+                        class="btn btn-xs btn-circle btn-white"
                         data-bs-toggle="modal"
                         data-bs-target="#modalProduct"
                       >
-                       <i class="bi bi-eye"></i>
+                        <i class="bi bi-eye"></i>
                       </button>
                     </span>
-                    <span class="card-action">
+                    <span class="card-action mx-1">
                       <button
-                        class="btn btn-xs btn-circle btn-white-primary"
+                        class="btn btn-xs btn-circle btn-white"
                         data-toggle="button"
                       >
                         <i class="bi bi-cart2"></i>
                       </button>
                     </span>
-                    <span class="card-action">
+                    <span class="card-action mx-1">
                       <button
                         class="btn btn-xs btn-circle btn-white"
                         data-toggle="button"
@@ -128,30 +128,30 @@
                   </a>
 
                   <!-- Actions -->
-                  <div class="card-actions">
-                    <span class="card-action">
+                  <div class="card-actions card-img-overlay text-center h-25">
+                    <span class="card-action mx-1">
                       <button
-                        class="btn btn-xs btn-circle btn-white-primary"
+                        class="btn btn-xs btn-circle btn-white"
                         data-bs-toggle="modal"
                         data-bs-target="#modalProduct"
                       >
-                        <i class="fe fe-eye"></i>
+                        <i class="bi bi-eye"></i>
                       </button>
                     </span>
-                    <span class="card-action">
+                    <span class="card-action mx-1">
                       <button
-                        class="btn btn-xs btn-circle btn-white-primary"
+                        class="btn btn-xs btn-circle btn-white"
                         data-toggle="button"
                       >
-                        <i class="fe fe-shopping-cart"></i>
+                        <i class="bi bi-cart2"></i>
                       </button>
                     </span>
-                    <span class="card-action">
+                    <span class="card-action mx-1">
                       <button
-                        class="btn btn-xs btn-circle btn-white-primary"
+                        class="btn btn-xs btn-circle btn-white"
                         data-toggle="button"
                       >
-                        <i class="fe fe-heart"></i>
+                        <i class="bi bi-heart"></i>
                       </button>
                     </span>
                   </div>
@@ -208,30 +208,30 @@
                   </a>
 
                   <!-- Actions -->
-                  <div class="card-actions">
-                    <span class="card-action">
+                  <div class="card-actions card-img-overlay text-center h-25">
+                    <span class="card-action mx-1">
                       <button
-                        class="btn btn-xs btn-circle btn-white-primary"
+                        class="btn btn-xs btn-circle btn-white"
                         data-bs-toggle="modal"
                         data-bs-target="#modalProduct"
                       >
-                        <i class="fe fe-eye"></i>
+                        <i class="bi bi-eye"></i>
                       </button>
                     </span>
-                    <span class="card-action">
+                    <span class="card-action mx-1">
                       <button
-                        class="btn btn-xs btn-circle btn-white-primary"
+                        class="btn btn-xs btn-circle btn-white"
                         data-toggle="button"
                       >
-                        <i class="fe fe-shopping-cart"></i>
+                        <i class="bi bi-cart2"></i>
                       </button>
                     </span>
-                    <span class="card-action">
+                    <span class="card-action mx-1">
                       <button
-                        class="btn btn-xs btn-circle btn-white-primary"
+                        class="btn btn-xs btn-circle btn-white"
                         data-toggle="button"
                       >
-                        <i class="fe fe-heart"></i>
+                        <i class="bi bi-heart"></i>
                       </button>
                     </span>
                   </div>
@@ -279,30 +279,30 @@
                   </a>
 
                   <!-- Actions -->
-                  <div class="card-actions">
-                    <span class="card-action">
+                  <div class="card-actions card-img-overlay text-center h-25">
+                    <span class="card-action mx-1">
                       <button
-                        class="btn btn-xs btn-circle btn-white-primary"
+                        class="btn btn-xs btn-circle btn-white"
                         data-bs-toggle="modal"
                         data-bs-target="#modalProduct"
                       >
-                        <i class="fe fe-eye"></i>
+                        <i class="bi bi-eye"></i>
                       </button>
                     </span>
-                    <span class="card-action">
+                    <span class="card-action mx-1">
                       <button
-                        class="btn btn-xs btn-circle btn-white-primary"
+                        class="btn btn-xs btn-circle btn-white"
                         data-toggle="button"
                       >
-                        <i class="fe fe-shopping-cart"></i>
+                        <i class="bi bi-cart2"></i>
                       </button>
                     </span>
-                    <span class="card-action">
+                    <span class="card-action mx-1">
                       <button
-                        class="btn btn-xs btn-circle btn-white-primary"
+                        class="btn btn-xs btn-circle btn-white"
                         data-toggle="button"
                       >
-                        <i class="fe fe-heart"></i>
+                        <i class="bi bi-heart"></i>
                       </button>
                     </span>
                   </div>
@@ -344,30 +344,30 @@
                   </a>
 
                   <!-- Actions -->
-                  <div class="card-actions">
-                    <span class="card-action">
+                  <div class="card-actions card-img-overlay text-center h-25">
+                    <span class="card-action mx-1">
                       <button
-                        class="btn btn-xs btn-circle btn-white-primary"
+                        class="btn btn-xs btn-circle btn-white"
                         data-bs-toggle="modal"
                         data-bs-target="#modalProduct"
                       >
-                        <i class="fe fe-eye"></i>
+                        <i class="bi bi-eye"></i>
                       </button>
                     </span>
-                    <span class="card-action">
+                    <span class="card-action mx-1">
                       <button
-                        class="btn btn-xs btn-circle btn-white-primary"
+                        class="btn btn-xs btn-circle btn-white"
                         data-toggle="button"
                       >
-                        <i class="fe fe-shopping-cart"></i>
+                        <i class="bi bi-cart2"></i>
                       </button>
                     </span>
-                    <span class="card-action">
+                    <span class="card-action mx-1">
                       <button
-                        class="btn btn-xs btn-circle btn-white-primary"
+                        class="btn btn-xs btn-circle btn-white"
                         data-toggle="button"
                       >
-                        <i class="fe fe-heart"></i>
+                        <i class="bi bi-heart"></i>
                       </button>
                     </span>
                   </div>
@@ -426,30 +426,30 @@
                   </a>
 
                   <!-- Actions -->
-                  <div class="card-actions">
-                    <span class="card-action">
+                  <div class="card-actions card-img-overlay text-center h-25">
+                    <span class="card-action mx-1">
                       <button
-                        class="btn btn-xs btn-circle btn-white-primary"
+                        class="btn btn-xs btn-circle btn-white"
                         data-bs-toggle="modal"
                         data-bs-target="#modalProduct"
                       >
-                        <i class="fe fe-eye"></i>
+                        <i class="bi bi-eye"></i>
                       </button>
                     </span>
-                    <span class="card-action">
+                    <span class="card-action mx-1">
                       <button
-                        class="btn btn-xs btn-circle btn-white-primary"
+                        class="btn btn-xs btn-circle btn-white"
                         data-toggle="button"
                       >
-                        <i class="fe fe-shopping-cart"></i>
+                        <i class="bi bi-cart2"></i>
                       </button>
                     </span>
-                    <span class="card-action">
+                    <span class="card-action mx-1">
                       <button
-                        class="btn btn-xs btn-circle btn-white-primary"
+                        class="btn btn-xs btn-circle btn-white"
                         data-toggle="button"
                       >
-                        <i class="fe fe-heart"></i>
+                        <i class="bi bi-heart"></i>
                       </button>
                     </span>
                   </div>
@@ -496,30 +496,30 @@
                   </a>
 
                   <!-- Actions -->
-                  <div class="card-actions">
-                    <span class="card-action">
+                  <div class="card-actions card-img-overlay text-center h-25">
+                    <span class="card-action mx-1">
                       <button
-                        class="btn btn-xs btn-circle btn-white-primary"
+                        class="btn btn-xs btn-circle btn-white"
                         data-bs-toggle="modal"
                         data-bs-target="#modalProduct"
                       >
-                        <i class="fe fe-eye"></i>
+                        <i class="bi bi-eye"></i>
                       </button>
                     </span>
-                    <span class="card-action">
+                    <span class="card-action mx-1">
                       <button
-                        class="btn btn-xs btn-circle btn-white-primary"
+                        class="btn btn-xs btn-circle btn-white"
                         data-toggle="button"
                       >
-                        <i class="fe fe-shopping-cart"></i>
+                        <i class="bi bi-cart2"></i>
                       </button>
                     </span>
-                    <span class="card-action">
+                    <span class="card-action mx-1">
                       <button
-                        class="btn btn-xs btn-circle btn-white-primary"
+                        class="btn btn-xs btn-circle btn-white"
                         data-toggle="button"
                       >
-                        <i class="fe fe-heart"></i>
+                        <i class="bi bi-heart"></i>
                       </button>
                     </span>
                   </div>
@@ -554,11 +554,12 @@
                 <span
                   class="
                     position-absolute
-                    translate-middle
-                    p-2
                     bg-success
                     text-white
                     new-alert
+                    translate-middle
+                    p-2
+                    bg-success
                     border border-light
                     rounded-circle
                   "
@@ -578,30 +579,30 @@
                   </a>
 
                   <!-- Actions -->
-                  <div class="card-actions">
-                    <span class="card-action">
+                  <div class="card-actions card-img-overlay text-center h-25">
+                    <span class="card-action mx-1">
                       <button
-                        class="btn btn-xs btn-circle btn-white-primary"
+                        class="btn btn-xs btn-circle btn-white"
                         data-bs-toggle="modal"
                         data-bs-target="#modalProduct"
                       >
-                        <i class="fe fe-eye"></i>
+                        <i class="bi bi-eye"></i>
                       </button>
                     </span>
-                    <span class="card-action">
+                    <span class="card-action mx-1">
                       <button
-                        class="btn btn-xs btn-circle btn-white-primary"
+                        class="btn btn-xs btn-circle btn-white"
                         data-toggle="button"
                       >
-                        <i class="fe fe-shopping-cart"></i>
+                        <i class="bi bi-cart2"></i>
                       </button>
                     </span>
-                    <span class="card-action">
+                    <span class="card-action mx-1">
                       <button
-                        class="btn btn-xs btn-circle btn-white-primary"
+                        class="btn btn-xs btn-circle btn-white"
                         data-toggle="button"
                       >
-                        <i class="fe fe-heart"></i>
+                        <i class="bi bi-heart"></i>
                       </button>
                     </span>
                   </div>
@@ -649,7 +650,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped lang="scss">
 .nav-link.active {
   border-bottom: 1px solid red;
 }
@@ -660,16 +661,36 @@ export default {
   top: 29px !important;
   right: 35px !important;
   cursor: pointer;
+  z-index: 1;
 }
-.hover:hover {
-  opacity: 0.2;
+.btn-white {
+  background: #fff;
+}
+.btn-circle {
+  border-radius: 50%;
+  z-index: 1;
+}
+.btn-circle:hover {
+  background: #ff6f61;
+  color: #fff;
+  border: 1px solid rgb(231, 70, 70);
 }
 
-.item-fade {
-  background: black;
-  opacity: 0.8;
-  transition: opacity 0.25s ease-in-out;
-  -moz-transition: opacity 0.25s ease-in-out;
-  -webkit-transition: opacity 0.25s ease-in-out;
+.card-actions {
+  display: none;
+}
+.card-img:hover {
+  img {
+    opacity: 0.7;
+    -webkit-transform: translateX(-1px);
+    transform: translateX(-1px);
+  }
+
+  .card-actions {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-top: 220px;
+  }
 }
 </style>

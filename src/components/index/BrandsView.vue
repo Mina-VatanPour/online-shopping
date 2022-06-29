@@ -25,18 +25,14 @@
 
             <!-- Overlay -->
             <a
-              class="
-                card-img-overlay card-img-overlay-hover
-                align-items-center
-                bg-dark-40
-              "
+              class="card-img-overlay card-img-overlay-hover align-items-center"
               href="blog-post.html"
             >
-              <p class="my-0 font-sm text-center text-white">
+              <p class="my-0 font-sm text-center text-white p-hover">
                 248
-                <i class="bi bi-heart mx-1"></i> 
+                <i class="bi bi-heart mx-1"></i>
                 7
-                <i class="bi bi-chat-left mx-1"></i> 
+                <i class="bi bi-chat-left mx-1"></i>
               </p>
             </a>
           </div>
@@ -52,19 +48,17 @@
             />
 
             <!-- Overlay -->
-            <!-- <a
-              class="
-                card-img-overlay card-img-overlay-hover
-                align-items-center
-                bg-dark-40
-              "
+            <a
+              class="card-img-overlay card-img-overlay-hover align-items-center"
               href="blog-post.html"
             >
-              <p class="my-0 fs-xxs text-center text-white">
-                <i class="fe fe-heart me-2"></i> 248
-                <i class="fe fe-message-square me-2 ms-3"></i> 7
+              <p class="my-0 font-sm text-center text-white p-hover">
+                248
+                <i class="bi bi-heart mx-1"></i>
+                7
+                <i class="bi bi-chat-left mx-1"></i>
               </p>
-            </a> -->
+            </a>
           </div>
         </div>
         <div class="col-6 col-sm-4 col-md px-1">
@@ -78,19 +72,17 @@
             />
 
             <!-- Overlay -->
-            <!-- <a
-              class="
-                card-img-overlay card-img-overlay-hover
-                align-items-center
-                bg-dark-40
-              "
+            <a
+              class="card-img-overlay card-img-overlay-hover align-items-center"
               href="blog-post.html"
             >
-              <p class="my-0 fs-xxs text-center text-white">
-                <i class="fe fe-heart me-2"></i> 248
-                <i class="fe fe-message-square me-2 ms-3"></i> 7
+              <p class="my-0 font-sm text-center text-white p-hover">
+                248
+                <i class="bi bi-heart mx-1"></i>
+                7
+                <i class="bi bi-chat-left mx-1"></i>
               </p>
-            </a> -->
+            </a>
           </div>
         </div>
         <div class="col-6 col-sm-4 col-md px-1">
@@ -104,19 +96,17 @@
             />
 
             <!-- Overlay -->
-            <!-- <a
-              class="
-                card-img-overlay card-img-overlay-hover
-                align-items-center
-                bg-dark-40
-              "
+            <a
+              class="card-img-overlay card-img-overlay-hover align-items-center"
               href="blog-post.html"
             >
-              <p class="my-0 fs-xxs text-center text-white">
-                <i class="fe fe-heart me-2"></i> 248
-                <i class="fe fe-message-square me-2 ms-3"></i> 7
+              <p class="my-0 font-sm text-center text-white p-hover">
+                248
+                <i class="bi bi-heart mx-1"></i>
+                7
+                <i class="bi bi-chat-left mx-1"></i>
               </p>
-            </a> -->
+            </a>
           </div>
         </div>
         <div class="col-6 col-sm-4 col-md px-1">
@@ -130,19 +120,17 @@
             />
 
             <!-- Overlay -->
-            <!-- <a
-              class="
-                card-img-overlay card-img-overlay-hover
-                align-items-center
-                bg-dark-40
-              "
+            <a
+              class="card-img-overlay card-img-overlay-hover align-items-center"
               href="blog-post.html"
             >
-              <p class="my-0 fs-xxs text-center text-white">
-                <i class="fe fe-heart me-2"></i> 248
-                <i class="fe fe-message-square me-2 ms-3"></i> 7
+              <p class="my-0 font-sm text-center text-white p-hover">
+                248
+                <i class="bi bi-heart mx-1"></i>
+                7
+                <i class="bi bi-chat-left mx-1"></i>
               </p>
-            </a> -->
+            </a>
           </div>
         </div>
         <div class="col-6 col-sm-4 col-md px-1">
@@ -156,19 +144,15 @@
             />
 
             <!-- Overlay -->
-            <!-- <a
-              class="
-                card-img-overlay card-img-overlay-hover
-                align-items-center
-                bg-dark-40
-              "
+            <a
+              class="card-img-overlay card-img-overlay-hover align-items-center"
               href="blog-post.html"
             >
               <p class="my-0 fs-xxs text-center text-white">
                 <i class="fe fe-heart me-2"></i> 248
                 <i class="fe fe-message-square me-2 ms-3"></i> 7
               </p>
-            </a> -->
+            </a>
           </div>
         </div>
       </div>
@@ -200,7 +184,7 @@
         <div class="col-4 col-sm-3 col-md text-center">
           <!-- Brand -->
           <img
-           :src="require('@/assets/img/brands/asos.svg')"
+            :src="require('@/assets/img/brands/asos.svg')"
             alt="..."
             class="img-fluid mb-7 mb-md-0"
           />
@@ -208,7 +192,7 @@
         <div class="col-4 col-sm-3 col-md text-center">
           <!-- Brand -->
           <img
-           :src="require('@/assets/img/brands/reebok.svg')"
+            :src="require('@/assets/img/brands/reebok.svg')"
             alt="..."
             class="img-fluid mb-6 mb-sm-0"
           />
@@ -216,7 +200,7 @@
         <div class="col-4 col-sm-3 col-md text-center">
           <!-- Brand -->
           <img
-           :src="require('@/assets/img/brands/zara.svg')"
+            :src="require('@/assets/img/brands/zara.svg')"
             alt="..."
             class="img-fluid mb-6 mb-sm-0"
           />
@@ -240,97 +224,52 @@ export default {
 };
 </script>
 
-<style scoped>
-a.card-img-overlay {
-    color: inherit;
+<style scoped lang="scss">
+.p-hover {
+  display: none;
 }
-.bg-dark-40 {
-    background-color: rgba(31,31,31,.4)!important;
-}
+
 .card-img-overlay-hover:hover {
-    opacity: 0;
-    transition: opacity .2s ease-in-out;
+  opacity: 0;
+  transition: opacity 10s ease-in-out;
+  background-color: rgba(31, 31, 31, 0.4) !important;
+  .p-hover {
+    display: block;
+  }
+}
+
+.card > * {
+  flex-shrink: 0;
 }
 .card-img-overlay {
-    display: flex;
-}
-.card>* {
-    flex-shrink: 0;
-}
-.align-items-center {
-    align-items: center!important;
-}
-.card-img-overlay {
-    bottom: 0;
-    left: 0;
-    padding: 1.5rem;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-a {
-    transition: all .1s ease-in-out;
-    transition-property: color;
-}
-a, a:hover {
-    text-decoration: none;
-}
-a {
-    color: #ff6f61;
-}
-*, :after, :before {
-    box-sizing: border-box;
+  display: flex;
+  bottom: 0;
+  left: 0;
 }
 
-
-
-
-
-.card-img-overlay>* {
-    flex: 1;
+.card-img-overlay > * {
+  flex: 1;
 }
 
 .text-white {
-    --bs-text-opacity: 1;
-    color: rgba(var(--bs-white-rgb),var(--bs-text-opacity))!important;
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
-.text-center {
-    text-align: center!important;
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
 }
-.fs-xxs {
-    font-size: .8125rem!important;
+user agent stylesheet p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
-.my-0 {
-    margin-bottom: 0!important;
-    margin-top: 0!important;
-}
-p {
-    margin-bottom: 1.5rem;
-    margin-top: 0;
-}
-*, :after, :before {
-    box-sizing: border-box;
-}
-user agent stylesheet
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-a.card-img-overlay {
-    color: inherit;
-}
-a, a:hover {
-    text-decoration: none;
-}
-a {
-    color: #ff6f61;
-}
-user agent stylesheet
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
+user agent stylesheet a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
 }
 </style>

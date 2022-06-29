@@ -1,0 +1,63 @@
+<div class="container">
+  
+    <div class="mizfa">آموزش های پایگاه دانش میزفا</div>
+    <div class="html">آموزش HTML میزفا</div>
+    <div class="css">آموزش CSS میزفا</div>
+    <div class="php">آموزش php میزفا</div>
+    
+  </div>
+  <style>
+    *{
+  direction:rtl;
+  font-family:iransansweb;
+}
+body , html {
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+div.container{
+  text-align:center;
+}
+/* --- inner div styles --- */
+div.html , div.css , div.php{
+  opacity:0;
+  padding:10px;
+  border-bottom:3px solid #23282d;
+  margin:10px;
+  box-shadow: 1px 1px 3px #23282d;
+  position:relative;
+  left:100px;
+}
+
+div.container:hover div:not(.mizfa){
+  opacity:1;
+  left:0px;
+  color:white;
+}
+
+/* --- mizfa div style --- */
+div.mizfa{
+  padding:10px;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+/*--- inner div transitions ---*/
+div.html{
+  background-color:#be0000;
+  color:#be0000;
+  transition: opacity 2s , left 1s , color 0.5s 0.5s;
+}
+div.css{
+  transition: opacity 2s 0.5s, left 1s 0.5s, color 0.5s 1s;
+  background-color:#066283;
+  color:#066283;
+}
+div.php{
+  transition: opacity 2s 1s, left 1s 1s, color 0.5s 1.5s;
+  background-color:#72c4f4;
+  color:#72c4f4;
+}
+  </style>
