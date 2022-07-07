@@ -7,6 +7,4 @@ import "bootstrap/dist/css/bootstrap.rtl.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "@/assets/scss/main.scss";
 import Countdown from 'vue3-flip-countdown';
-import "flickity/dist/flickity.min.css";
-import "flickity/dist/flickity.pkgd.js";
 createApp(App).use(store).use(router).use(Countdown).mount("#app");
