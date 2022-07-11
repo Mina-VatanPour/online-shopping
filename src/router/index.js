@@ -1,26 +1,26 @@
 import { createRouter, createWebHistory } from "vue-router";
 // Home
-import HomeView from "../views/HomeView.vue";
+import HomeView from "../views/site/HomeView.vue";
 // Catalog
-import TemplateCatalog from "../views/catalog/TemplateCatalog.vue";
-// import ShowClothing from "../views/catalog/index/clothing/ShowClothing.vue";
-// import ShowShoes from "../views/catalog/index/shoes/ShowShoes.vue";
-// import ShowBags from "../views/catalog/index/bags/ShowBags.vue";
-// import ShowCollections from "../views/catalog/index/collections/ShowCollections.vue";
-// import ShopSweaters from "../views/catalog/index/shopsweaters/ShopSweaters.vue";
+import TemplateCatalog from "../views/site/catalog/TemplateCatalog.vue";
+// import ShowClothing from "../views/site/catalog/index/clothing/ShowClothing.vue";
+// import ShowShoes from "../views/site/catalog/index/shoes/ShowShoes.vue";
+// import ShowBags from "../views/site/catalog/index/bags/ShowBags.vue";
+// import ShowCollections from "../views/site/catalog/index/collections/ShowCollections.vue";
+// import ShopSweaters from "../views/site/catalog/index/shopsweaters/ShopSweaters.vue";
 // Store
-import TemplateStore from "../views/store/TemplateStore.vue";
-import ShowShop from "../views/store/index/shop/ShowShop.vue";
-import ShowProduct from "../views/store/index/product/ShowProduct.vue";
-import ShowSupport from "../views/store/index/support/ShowSupport.vue";
-import ShowAccount from "../views/store/index/account/ShowAccount.vue";
-import ShowModals from "../views/store/index/modals/ShowModals.vue";
+import TemplateStore from "../views/site/store/TemplateStore.vue";
+import ShowShop from "../views/site/store/index/shop/ShowShop.vue";
+import ShowProduct from "../views/site/store/index/product/ShowProduct.vue";
+import ShowSupport from "../views/site/store/index/support/ShowSupport.vue";
+import ShowAccount from "../views/site/store/index/account/ShowAccount.vue";
+import ShowModals from "../views/site/store/index/modals/ShowModals.vue";
 // Pages
-import ShowPages from "../views/pages/ShowPages.vue";
+import ShowPages from "../views/site/pages/ShowPages.vue";
 // Weblog
-import WeblogView from "../views/ShowWeblog.vue";
+import WeblogView from "../views/site/ShowWeblog.vue";
 // Document
-import DocumentView from "../views/ShowDocument.vue";
+import DocumentView from "../views/site/ShowDocument.vue";
 
 const routes = [
   // Header | Meno 

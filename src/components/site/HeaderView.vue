@@ -209,7 +209,7 @@
                   <div class="dropdown-menu py-0 shadow">
                     <div class="card card-lg">
                       <div class="card-body">
-                       <ShowPages />
+                        <ShowPages />
                       </div>
                     </div>
                   </div>
@@ -276,20 +276,20 @@
 
 <script>
 // catalog
-import ShowClothing from "@/views/catalog/index/clothing/ShowClothing.vue";
-import ShowShoes from "@/views/catalog/index/shoes/ShowShoes.vue";
-import ShowBags from "@/views/catalog/index/bags/ShowBags.vue";
-import ShowCollections from "@/views/catalog/index/collections/ShowCollections.vue";
-import ShopSweaters from "@/views/catalog/index/shopsweaters/ShopSweaters.vue";
+import ShowClothing from "@/views/site/catalog/index/clothing/ShowClothing.vue";
+import ShowShoes from "@/views/site/catalog/index/shoes/ShowShoes.vue";
+import ShowBags from "@/views/site/catalog/index/bags/ShowBags.vue";
+import ShowCollections from "@/views/site/catalog/index/collections/ShowCollections.vue";
+import ShopSweaters from "@/views/site/catalog/index/shopsweaters/ShopSweaters.vue";
 // shop
-import ShowShop from "../views/store/index/shop/ShowShop.vue";
-import ShowProduct from "../views/store/index/product/ShowProduct.vue";
-import ShowSupport from "../views/store/index/support/ShowSupport.vue";
-import ShowAccount from "../views/store/index/account/ShowAccount.vue";
-import ShowModals from "../views/store/index/modals/ShowModals.vue";
-import ShowPages from "../views/pages/ShowPages.vue";
-      
-// pages 
+import ShowShop from "@/views/site/store/index/shop/ShowShop.vue";
+import ShowProduct from "@/views/site/store/index/product/ShowProduct.vue";
+import ShowSupport from "@/views/site/store/index/support/ShowSupport.vue";
+import ShowAccount from "@/views/site/store/index/account/ShowAccount.vue";
+import ShowModals from "@/views/site/store/index/modals/ShowModals.vue";
+import ShowPages from "@/views/site/pages/ShowPages.vue";
+
+// pages
 export default {
   name: "HeaderView",
   components: {
@@ -305,8 +305,8 @@ export default {
     ShowSupport,
     ShowAccount,
     ShowModals,
-    ShowPages
-},
+    ShowPages,
+  },
 };
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
