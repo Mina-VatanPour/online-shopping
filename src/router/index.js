@@ -29,7 +29,9 @@ import OrderFactor from "../components/panel/user/orders/OrderFactor.vue";
 import MyWidhlist from "../components/panel/user/MyWidhlist.vue";
 import PersonalInfo from "../components/panel/user/information/PersonalInfo.vue";
 import EditInfo from "../components/panel/user/information/EditInfo.vue";
-import AddressesList from "../components/panel/user/AddressesList.vue";
+import AddressesList from "../components/panel/user/address/AddressesList.vue";
+import NewAddress from "../components/panel/user/address/NewAddress.vue";
+import EditAddress from "../components/panel/user/address/EditAddress.vue";
 import PaymentMethods from "../components/panel/user/PaymentMethods.vue";
 import LayoutAccount from "../components/panel/user/LayoutAccount.vue";
 
@@ -461,6 +463,18 @@ const routes = [
         path: "addresses-list",
         name: "addresses-list",
         component: AddressesList,
+        children :[
+          {
+            path: "new-address",
+            name: "new-address",
+            component: NewAddress,
+          },
+          {
+            path: "edit/:id",
+            name: "edit-address",
+            component: EditAddress,
+          },
+        ]
       },
       {
         path: "payment-methods",
