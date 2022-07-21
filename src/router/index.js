@@ -21,6 +21,16 @@ import ShowPages from "../views/site/pages/ShowPages.vue";
 import WeblogView from "../views/site/ShowWeblog.vue";
 // Document
 import DocumentView from "../views/site/ShowDocument.vue";
+//UserAccount
+import UserAccount from "../views/panel/user/UserAccount.vue";
+import MyOrders from "../components/panel/user/MyOrders.vue";
+import OrderDetails from "../components/panel/user/OrderDetails.vue";
+import OrderFactor from "../components/panel/user/OrderFactor.vue";
+import MyWidhlist from "../components/panel/user/MyWidhlist.vue";
+import PersonalInfo from "../components/panel/user/PersonalInfo.vue";
+import AddressesList from "../components/panel/user/AddressesList.vue";
+import PaymentMethods from "../components/panel/user/PaymentMethods.vue";
+import LayoutAccount from "../components/panel/user/LayoutAccount.vue";
 
 const routes = [
   // Header | Meno 
@@ -413,6 +423,53 @@ const routes = [
     path: "/document",
     name: "document",
     component: DocumentView,
+  },
+  {
+    path: "/user-account",
+    name: "user-account",
+    component: UserAccount,
+    children: [
+      {
+        path: "my-orders",
+        name: "my-orders",
+        component: MyOrders,
+      },
+      {
+        path: "order-details",
+        name: "order-details",
+        component: OrderDetails,
+      },
+      {
+        path: "my-widhlist",
+        name: "my-widhlist",
+        component: MyWidhlist,
+      },
+      {
+        path: "personal-info",
+        name: "personal-info",
+        component: PersonalInfo,
+      },
+      {
+        path: "addresses-list",
+        name: "addresses-list",
+        component: AddressesList,
+      },
+      {
+        path: "payment-methods",
+        name: "payment-methods",
+        component: PaymentMethods,
+      },
+      {
+        path: "layout-account",
+        name: "layout-account",
+        component: LayoutAccount,
+      },
+    ]
+  },
+  {
+    path: "/order-factor",
+    name: "order-factor",
+    component: OrderFactor,
   },
 ];
 

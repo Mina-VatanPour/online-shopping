@@ -14,14 +14,19 @@ $large : 992px;
     //some CSS
     @media screen and (min-width: $small) {}
 
-    @media screen and (max-width : $medium) {}
+    @media screen and (max-width: $medium) {
+        // اینجا اعمال نشد مجبور شدم تو خود فایل header قرارش بدم
+        // .header {
+        //     display: flex;
+        //     flex-direction: row-reverse;
+        //     justify-content: space-between;
+        // }
+    }
 
     @media screen and (min-width: $medium) {}
 
     @media screen and (min-width: $large) {
-        #header {
-            box-shadow: 1px 1px 1px rgb(216, 145, 145);
-        }
+
 
         .navbar-expand-lg {
             flex-wrap: wrap;
@@ -30,16 +35,6 @@ $large : 992px;
         }
     }
 
-    @media screen and (max-width: 991px) {
-        #header {
-            flex-flow: column-reverse wrap;
-        }
-
-        width: 100%;
-
-        .border-b {
-            border-bottom: 1px solid #eee;
-        }
-    }
+    @media screen and (max-width: 991px) {}
 
 }

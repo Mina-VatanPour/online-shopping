@@ -2,18 +2,24 @@
   <div class="container-fluid">
     <div class="row">
       <nav
-        class="navbar navbar-expand-lg navbar-light bg-white align-items-center"
+        class="
+          navbar navbar-expand-md navbar-light
+          bg-white
+          align-items-center
+          px-0
+        "
       >
         <!-- Brand -->
-        <div class="row w-100">
-          <div class="col-3 col-md-2 ms-4">
+        <div class="row w-100 header ps-sm-5 ps-md-0">
+          <div class="col-3 col-md-2 ms-4 px-0">
             <router-link
               class="
                 navbar-brand
                 d-flex
                 align-items-center
-                justify-content-center
+                justify-content-end
                 pt-0
+                me-2
               "
               :to="{ name: 'home' }"
             >
@@ -29,7 +35,8 @@
             class="
               navbar-toggler
               collapsed
-              justify-content-between
+              d-sm-flex d-md-none
+              justify-content-center
               align-items-center
               col-1
             "
@@ -40,7 +47,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon ms-1"></span>
           </button>
 
           <!-- Collapse -->
@@ -234,9 +241,17 @@
             </div>
           </div>
 
-          <div class="col-md-2 d-flex justify-content-end align-items-center">
+          <div
+            class="
+              col-md-2
+              d-none d-md-flex
+              justify-content-center
+              align-items-center
+              px-0
+            "
+          >
             <ul class="navbar-nav flex-row">
-              <li class="nav-item b-bottom">
+              <li class="nav-item b-bottom px-sm-1 px-md-0">
                 <a
                   class="nav-link"
                   data-bs-toggle="offcanvas"
@@ -245,17 +260,19 @@
                   <i class="bi bi-search"></i>
                 </a>
               </li>
-              <li class="nav-item ms-lg-n4 b-bottom">
-                <a class="nav-link" href="./account-orders.html">
+              <!-- <ModalSearch /> -->
+
+              <li class="nav-item ms-lg-n4 b-bottom px-sm-1 px-md-0">
+                <router-link class="nav-link" :to="{ name: 'user-account' }">
                   <i class="bi bi-person"></i>
-                </a>
+                </router-link>
               </li>
-              <li class="nav-item ms-lg-n4 b-bottom">
+              <li class="nav-item ms-lg-n4 b-bottom px-sm-1 px-md-0">
                 <a class="nav-link" href="./account-wishlist.html">
                   <i class="bi bi-heart"></i>
                 </a>
               </li>
-              <li class="nav-item ms-lg-n4 b-bottom">
+              <li class="nav-item ms-lg-n4 b-bottom px-sm-1 px-md-0">
                 <a
                   class="nav-link"
                   data-bs-toggle="offcanvas"
@@ -288,6 +305,8 @@ import ShowSupport from "@/views/site/store/index/support/ShowSupport.vue";
 import ShowAccount from "@/views/site/store/index/account/ShowAccount.vue";
 import ShowModals from "@/views/site/store/index/modals/ShowModals.vue";
 import ShowPages from "@/views/site/pages/ShowPages.vue";
+// ModalSearch
+// import ModalSearch from "@/components/site/ModalSearch.vue";
 
 // pages
 export default {
@@ -306,6 +325,8 @@ export default {
     ShowAccount,
     ShowModals,
     ShowPages,
+    // modal
+    // ModalSearch,
   },
 };
 </script>
@@ -324,5 +345,14 @@ export default {
 .navbar-light .navbar-nav .show > .nav-link {
   color: red;
   border-bottom: 1px dotted red;
+}
+// داخل فایل sass اعمال نشد
+$medium: 768px;
+@media screen and (max-width: $medium) {
+  .header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }
 </style>
