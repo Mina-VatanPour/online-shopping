@@ -23,11 +23,12 @@ import WeblogView from "../views/site/ShowWeblog.vue";
 import DocumentView from "../views/site/ShowDocument.vue";
 //UserAccount
 import UserAccount from "../views/panel/user/UserAccount.vue";
-import MyOrders from "../components/panel/user/MyOrders.vue";
-import OrderDetails from "../components/panel/user/OrderDetails.vue";
-import OrderFactor from "../components/panel/user/OrderFactor.vue";
+import MyOrders from "../components/panel/user/orders/MyOrders.vue";
+import OrderDetails from "../components/panel/user/orders/OrderDetails.vue";
+import OrderFactor from "../components/panel/user/orders/OrderFactor.vue";
 import MyWidhlist from "../components/panel/user/MyWidhlist.vue";
-import PersonalInfo from "../components/panel/user/PersonalInfo.vue";
+import PersonalInfo from "../components/panel/user/information/PersonalInfo.vue";
+import EditInfo from "../components/panel/user/information/EditInfo.vue";
 import AddressesList from "../components/panel/user/AddressesList.vue";
 import PaymentMethods from "../components/panel/user/PaymentMethods.vue";
 import LayoutAccount from "../components/panel/user/LayoutAccount.vue";
@@ -448,6 +449,13 @@ const routes = [
         path: "personal-info",
         name: "personal-info",
         component: PersonalInfo,
+        children: [
+          {
+            path: "edit/:param",
+            name: "edit-info",
+            component: EditInfo
+          }
+        ]
       },
       {
         path: "addresses-list",
