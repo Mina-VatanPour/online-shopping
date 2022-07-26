@@ -30,9 +30,9 @@ import MyWidhlist from "../components/panel/user/MyWidhlist.vue";
 import PersonalInfo from "../components/panel/user/information/PersonalInfo.vue";
 import EditInfo from "../components/panel/user/information/EditInfo.vue";
 import AddressesList from "../components/panel/user/address/AddressesList.vue";
-import NewAddress from "../components/panel/user/address/NewAddress.vue";
+// import NewAddress from "../components/panel/user/address/NewAddress.vue";
 import EditAddress from "../components/panel/user/address/EditAddress.vue";
-import PaymentMethods from "../components/panel/user/PaymentMethods.vue";
+import UserComments from "../components/panel/user/comments/UserComments.vue";
 import LayoutAccount from "../components/panel/user/LayoutAccount.vue";
 
 const routes = [
@@ -464,11 +464,11 @@ const routes = [
         name: "addresses-list",
         component: AddressesList,
         children :[
-          {
-            path: "new-address",
-            name: "new-address",
-            component: NewAddress,
-          },
+          // {
+          //   path: "new-address",
+          //   name: "new-address",
+          //   component: NewAddress,
+          // },
           {
             path: "edit/:id",
             name: "edit-address",
@@ -477,9 +477,9 @@ const routes = [
         ]
       },
       {
-        path: "payment-methods",
-        name: "payment-methods",
-        component: PaymentMethods,
+        path: "user-comments",
+        name: "user-comments",
+        component: UserComments,
       },
       {
         path: "layout-account",

@@ -76,8 +76,8 @@ export default {
         link: "addresses-list",
       },
       {
-        title: "روش های پرداخت",
-        link: "payment-methods",
+        title: "دیدگاه ها",
+        link: "user-comments",
       },
       {
         title: "خروج از حساب کاربری",

@@ -90,7 +90,6 @@
               </router-link>
             </div>
           </div>
-        
         </div>
 
         <!-- Returned orders -->
@@ -129,14 +128,17 @@ export default {
   setup() {
     const tabs = ref([
       {
+        id: "1",
         title: "سفارش های جاری",
         number: 1,
       },
       {
+        id: "2",
         title: " تحویل شده",
         number: 3,
       },
       {
+        id: "3",
         title: "مرجوع شده",
         number: 1,
       },

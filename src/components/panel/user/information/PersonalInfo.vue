@@ -194,7 +194,7 @@
     </div>
   </div>
   <!-- row5 -->
-  <div class="row p-3 mt-2">
+  <div class="row p-3 mt-3 border rounded">
     <h6 class="fw-bold px-0">اطلاعات حقوقی</h6>
     <p class="text-muted px-0 mt-2">
       این گزینه برای کسانی است که نیاز به خرید سازمانی (با فاکتور رسمی و گواهی

@@ -6,12 +6,25 @@
       <h5>لیست آدرس ها :</h5>
     </div>
     <div class="left col-md-6 text-end px-0">
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-outline-success font-md"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        ثبت آدرس جدید
+        <i class="bi bi-geo-alt-fill"></i>
+      </button>
+      <!-- Modal -->
+      <NewAddress />
+      <!-- 
       <router-link :to="{ name: 'new-address' }">
         <button type="button" class="btn btn-outline-success font-md">
           ثبت آدرس جدید
           <i class="bi bi-geo-alt-fill"></i>
         </button>
-      </router-link>
+      </router-link> -->
     </div>
   </div>
   <div
@@ -67,8 +80,12 @@
 
 <script>
 import { ref } from "@vue/reactivity";
+import NewAddress from "@/components/panel/user/address/NewAddress.vue";
 export default {
   name: "Addresseslist",
+  components: {
+    NewAddress,
+  },
   setup() {
     const addressInfo = ref([
       {
