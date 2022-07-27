@@ -5,10 +5,10 @@
       font-sm
       d-flex
       justify-content-between
-      mb-2
       border border-warning
       rounded
       p-2
+      gx-0
       shadow-sm
     "
   >
@@ -24,9 +24,10 @@
       </router-link>
     </div>
   </div>
+  <div class="row border rounded my-4">
   <!-- row1 -->
-  <div class="row border-bottom p-3 d-flex flex-nowrap">
-    <div class="right col-md-6 border-end">
+  <div class="row border-bottom p-3 ms-1 d-flex flex-nowrap">
+    <div class="col-md-6 border-end">
       <div class="row d-flex gustify-content-between align-items-center">
         <div class="col-md-9">
           <p>
@@ -43,7 +44,7 @@
         </div>
       </div>
     </div>
-    <div class="left col-md-6 ms-2">
+    <div class="col-md-6 ms-2">
       <div class="row d-flex gustify-content-between align-items-center">
         <div class="col-md-9">
           <p>
@@ -65,8 +66,8 @@
     </div>
   </div>
   <!-- row2 -->
-  <div class="row border-bottom p-3 d-flex flex-nowrap">
-    <div class="right col-md-6 border-end">
+  <div class="row border-bottom p-3  ms-1 d-flex flex-nowrap">
+    <div class="col-md-6 border-end">
       <div class="row d-flex gustify-content-between align-items-center">
         <div class="col-md-9">
           <p>
@@ -86,7 +87,7 @@
         </div>
       </div>
     </div>
-    <div class="left col-md-6 ms-2">
+    <div class="col-md-6 ms-2">
       <div class="row d-flex gustify-content-between align-items-center">
         <div class="col-md-9">
           <p>
@@ -105,8 +106,8 @@
     </div>
   </div>
   <!-- row3 -->
-  <div class="row border-bottom p-3 d-flex flex-nowrap">
-    <div class="right col-md-6 border-end">
+  <div class="row border-bottom p-3  ms-1 d-flex flex-nowrap">
+    <div class="col-md-6 border-end">
       <div class="row d-flex gustify-content-between align-items-center">
         <div class="col-md-9">
           <p>
@@ -126,7 +127,7 @@
         </div>
       </div>
     </div>
-    <div class="left col-md-6 ms-2">
+    <div class="col-md-6 ms-2">
       <div class="row d-flex gustify-content-between align-items-center">
         <div class="col-md-9">
           <p>
@@ -154,8 +155,8 @@
     </div>
   </div>
   <!-- row4 -->
-  <div class="row p-3 border-bottom d-flex flex-nowrap">
-    <div class="right col-md-6 border-end">
+  <div class="row p-3  ms-1 border-bottom d-flex flex-nowrap">
+    <div class="col-md-6 border-end">
       <div class="row d-flex gustify-content-between align-items-center">
         <div class="col-md-9">
           <p>
@@ -175,7 +176,7 @@
         </div>
       </div>
     </div>
-    <div class="left col-md-6 ms-2">
+    <div class="col-md-6 ms-2">
       <div class="row d-flex gustify-content-between align-items-center">
         <div class="col-md-9">
           <p>
@@ -193,8 +194,9 @@
       </div>
     </div>
   </div>
+  </div>
   <!-- row5 -->
-  <div class="row p-3 mt-3 border rounded">
+  <div class="row p-3 border rounded gx-0">
     <h6 class="fw-bold px-0">اطلاعات حقوقی</h6>
     <p class="text-muted px-0 mt-2">
       این گزینه برای کسانی است که نیاز به خرید سازمانی (با فاکتور رسمی و گواهی
@@ -315,4 +317,5 @@ export default {
 </script>
 
 <style>
+
 </style>
