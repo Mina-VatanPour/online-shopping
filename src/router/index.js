@@ -34,6 +34,7 @@ import AddressesList from "../components/panel/user/address/AddressesList.vue";
 import EditAddress from "../components/panel/user/address/EditAddress.vue";
 import UserComments from "../components/panel/user/comments/UserComments.vue";
 import LayoutAccount from "../components/panel/user/LayoutAccount.vue";
+import ProductsPage from "../views/site/products/ProductsPage.vue";
 
 const routes = [
   // Header | Meno 
@@ -492,6 +493,12 @@ const routes = [
     path: "/order-factor",
     name: "order-factor",
     component: OrderFactor,
+  },
+  // products
+  {
+    path: "/products-page",
+    name: "products-page",
+    component: ProductsPage,
   },
 ];
 

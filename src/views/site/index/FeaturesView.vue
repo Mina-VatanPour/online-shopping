@@ -1,7 +1,7 @@
 <template>
   <section class="py-4">
     <div class="container">
-      <div class="row pb-4 border-bottom gy-3 gy-md-0">
+      <div class="row pb-4 gy-3 gy-md-0">
         <div class="col-6 col-md-3">
           <!-- Item -->
           <div class="d-flex mb-6 mb-lg-0 align-items-center">

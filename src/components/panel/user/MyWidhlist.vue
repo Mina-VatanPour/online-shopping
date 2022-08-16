@@ -2,7 +2,9 @@
 <div class="row d-flex flex-wrap">
   <div class="col-md-6 p-3 hover">
 <div class="card d-flex justify-content-center">
+  <div class="image p-4 mx-auto">
   <img :src="require('@/assets/img/product/product-1.jpg')" class="card-img-top img-fluid" alt="...">
+  </div>
   <div class="card-body p-3">
     <h5 class="card-title">کیف زنانه مدل سرخ پوستی </h5>
     <p class="card-text font-xs text-danger mt-2">تنها 2 عدد در انبار باقی مانده است.</p>
@@ -28,7 +30,8 @@
 </div>
 
   <!-- paginations -->
-            <nav
+            <!-- <div v-if="" class="row d-flex justify-content-center"> -->
+              <nav
               aria-label="Page navigation example"
               class="d-flex justify-content-end mt-4"
             >
@@ -48,6 +51,7 @@
                 </li>
               </ul>
             </nav>
+            <!-- </div> -->
 </template>
 
 <script>
@@ -57,4 +61,8 @@ export default {
 </script>
 
 <style>
+.image {
+  width: 150px;
+   height: 150px;
+}
 </style>

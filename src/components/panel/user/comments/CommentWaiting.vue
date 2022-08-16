@@ -1,6 +1,5 @@
 <template>
-  <div
-    class="
+  <div class="
       row
       comment
       border
@@ -11,14 +10,9 @@
       font-sm
       d-flex
       align-items-center
-    "
-  >
+    ">
     <div class="col-md-1">
-      <img
-        :src="require('@/assets/img/comment.png')"
-        alt=""
-        class="img-fluid"
-      />
+      <img :src="require('@/assets/img/comment.png')" alt="" class="img-fluid" />
     </div>
     <div class="col-md-11">
       <h6>از این کالاها راضی هستید؟</h6>
@@ -28,40 +22,24 @@
     </div>
   </div>
   <div class="row d-flex flex-wrap justify-content-evenly">
-    <div
-      class="col-md-5 border rounded shadow-sm p-4 mb-4"
-      v-for="(waitingComment, index) in waitingComments"
-      :key="index"
-    >
+    <div class="col-md-5 border rounded shadow-sm p-4 mb-4" v-for="(waitingComment, index) in waitingComments"
+      :key="index">
       <div class="row d-flex flex-nowrap align-items-center">
         <div class="col-md-3 me-2">
-          <img
-            :src="require('@/assets/img/product/' + waitingComment.picture)"
-            class="img-fluid rounded-circle"
-          />
+          <img :src="require('@/assets/img/product/' + waitingComment.picture)" class="img-fluid rounded-circle" />
         </div>
         <div class="col-md-9 font-sm fw-bold">{{ waitingComment.title }}</div>
       </div>
       <div class="row d-flex justify-content-center">
         <!-- Button trigger modal -->
-        <button
-          type="button"
-          class="col-md-8 btn btn-outline-danger mt-4 font-sm fw-bold"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
+        <button type="button" class="col-md-8 btn btn-outline-danger mt-4 font-sm fw-bold" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">
           <i class="bi bi-chat me-2"></i>
           ثبت دیدگاه
         </button>
 
         <!-- Modal -->
-        <div
-          class="modal fade"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header text-start">
@@ -73,12 +51,7 @@
                   </p>
                 </h6>
 
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body p-4">
                 <div class="row">
@@ -88,78 +61,112 @@
                         <span class="text-danger">*</span>
                         امتیاز دهید :
                       </label>
-                      <input
-                        type="range"
-                        class="form-range"
-                        min="0"
-                        max="5"
-                        id="customRange2"
-                      />
+                      <input type="range" class="form-range" min="0" max="5" id="customRange2" />
                     </div>
                     <hr class="text-muted" />
                     <p class="font-sm fw-bold">
                       خرید این محصول را به دیگران ...
                     </p>
-                    <div
-                      class="
+                    <div class="
                         row
                         text-muted text-center
                         d-flex
                         justify-content-evenly
-                      "
-                    >
-                      <div
-                        class="
+                      ">
+                      <div class="
                           col-md-3
                           border border-success
                           text-success
                           rounded
                           p-3
                           pointer
-                        "
-                      >
+                        ">
                         <i class="bi bi-hand-thumbs-up"></i>
                         <br />
                         <p class="font-xs mb-0">پیشنهاد میکنم</p>
                       </div>
-                      <div
-                        class="
+                      <div class="
                           col-md-3
                           border border-warning
                           text-warning
                           rounded
                           p-3
                           pointer
-                        "
-                      >
+                        ">
                         <i class="bi bi-question"></i>
                         <i class="bi bi-exclamation"></i>
                         <br />
                         <p class="font-xs mb-0">مطمئن نیستم</p>
                       </div>
-                      <div
-                        class="
+                      <div class="
                           col-md-3
                           border border-danger
                           text-danger
                           rounded
                           p-3
                           pointer
-                        "
-                      >
+                        ">
                         <i class="bi bi-hand-thumbs-down"></i>
                         <br />
                         <p class="font-xs mb-0">پیشنهاد نمیکنم</p>
                       </div>
                     </div>
                     <hr class="text-muted my-4" />
+
                     <h6 class="fw-bold my-3">دیدگاه خود را شرح دهید</h6>
                     <p class="my-2">عنوان نظر</p>
-                    <input type="text" class="form-control mb-2 font-sm" />
-                    <p class="my-2">نکات مثبت</p>
-                    <input type="text" class="form-control mb-2 font-sm" />
+                    <input type="text" class="form-control font-sm " />
+
+
+                    <form id="posetiveForm">
+                      <div class="form-group">
+                        <p class="my-2">نکات مثبت</p>
+                        <div class="input-group flex-nowrap">
+                          <input type="text" class="form-control font-sm " id="posetive" />
+                          <button class="input-group-text" type="submit" id="addon-wrapping">
+                            <i class="bi bi-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                    <!-- با زدن دکمه افزودن مثبتقادیر وارد شده قبلی میاد تو یو ال میشینه -->
+                    <ul class="p-3 mb-0 font-sm d-none posetiveItemsList">
+                      <!-- <li>
+                        <i class="bi bi-plus text-success"></i>
+                        {{ posetiveItem.description }}
+                      </li> -->
+                    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     <p class="my-2">نکات منفی</p>
-                    <input type="text" class="form-control mb-2 font-sm" />
+                    <div class="input-group flex-nowrap">
+                      <input type="text" class="form-control font-sm " id="negative" />
+                      <button class="input-group-text" id="addon-wrapping">
+                        <i class="bi bi-plus"></i>
+                      </button>
+                    </div>
+                    <!-- با زدن دکمه افزودن مثبتقادیر وارد شده قبلی میاد تو یو ال میشینه -->
+                    <ul class="p-3 mb-0 font-sm d-none negativeItems">
+                      <!-- <li v-for="(negativeItem, index) in negativePoints" :key="index">
+                        <i class="bi bi-dash text-danger"></i>
+                        {{ negativeItem.description }}
+                      </li> -->
+                    </ul>
+
+
                   </div>
                   <div class="col-md-6 left border rounded p-3">
                     <h6 class="mb-3 fw-bold lh-lg">
@@ -192,17 +199,13 @@
                     </p>
                     <p>
                       با مطالعه‌ی
-                      <a href="#" class="link-primary text-decoration-underline"
-                        >این لینک</a
-                      >
+                      <a href="#" class="link-primary text-decoration-underline">این لینک</a>
                       می‌توانید مفید‌ترین الگوی عکاسی از کالایی که خریداری
                       کرده‌اید را مشاهده کنید.
                     </p>
                     <p>
                       پیشنهاد می‌شود قوانین کامل ثبت نظر را در
-                      <a href="#" class="link-primary text-decoration-underline"
-                        >این صفحه</a
-                      >
+                      <a href="#" class="link-primary text-decoration-underline">این صفحه</a>
                       مطالعه کنید.
                     </p>
                     <p>
@@ -222,11 +225,7 @@
                     متن نظر
                     <span class="text-danger">*</span>
                   </p>
-                  <textarea
-                    class="form-control text-start font-sm"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                  >
+                  <textarea class="form-control text-start font-sm" id="exampleFormControlTextarea1" rows="3">
                   </textarea>
                 </div>
                 <div class="row px-3">
@@ -240,12 +239,8 @@
                       <label for="inputTag ">
                         انتخاب فایل <br />
                         <i class="bi bi-plus-circle"></i>
-                        <input
-                          type="file"
-                          id="inputTag"
-                          accept="image/png, image/jpg, image/gif, image/jpeg"
-                          multiple
-                        />
+                        <input type="file" id="inputTag" accept="image/png, image/jpg, image/gif, image/jpeg"
+                          multiple />
                         <br />
                         <span id="imageName"></span>
                       </label>
@@ -274,64 +269,75 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { ref } from "@vue/reactivity";
-export default {
-  name: "CommentWaiting",
-  setup() {
-    const waitingComments = ref([
-      {
-        id: "1",
-        title: " کیف زنانه مدل سرخ پوستی برند XYZXCFGH",
-        picture: "product-1.jpg",
-      },
-      {
-        id: "2",
-        title: "سویشرت مدل صورتی کتونی",
-        picture: "product-4.jpg",
-      },
-      {
-        id: "3",
-        title: "سویشرت مدل صورتی کتونی",
-        picture: "product-4.jpg",
-      },
-      {
-        id: "4",
-        title: " کیف زنانه مدل سرخ پوستی برند XYZXCFGH",
-        picture: "product-1.jpg",
-      },
-    ]);
-    return { waitingComments };
+const waitingComments = ref([
+  {
+    id: "1",
+    title: " کیف زنانه مدل سرخ پوستی برند XYZXCFGH",
+    picture: "product-1.jpg",
   },
-  // mounted() {
-  //    let recaptchaScript = document.createElement('script')
-  //     recaptchaScript.setAttribute('src', 'https://www.google.com/recaptcha/api.js')
-  //     document.head.appendChild(recaptchaScript)
-
-  //   let input = document.getElementById("inputTag");
-  //   let imageName = document.getElementById("imageName");
-
-  //   input.addEventListener("change", () => {
-  //     let inputImage = document.querySelector("input[type=file]").files[0];
-
-  //     imageName.innerText = inputImage.name;
-  //   });
-  // },
-};
+  {
+    id: "2",
+    title: "سویشرت مدل صورتی کتونی",
+    picture: "product-4.jpg",
+  },
+  {
+    id: "3",
+    title: "سویشرت مدل صورتی کتونی",
+    picture: "product-4.jpg",
+  },
+  {
+    id: "4",
+    title: " کیف زنانه مدل سرخ پوستی برند XYZXCFGH",
+    picture: "product-1.jpg",
+  },
+]);
+const posetivePoints = ref([
+  {
+    id: 1,
+    description: "نقطه قوت 1",
+  },
+  {
+    id: 2,
+    description: "نقطه قوت 2",
+  },
+  {
+    id: 3,
+    description: "نقطه قوت 3",
+  },
+]);
+const negativePoints = ref([
+  {
+    id: 1,
+    description: "نقطه ضعف 1",
+  },
+  {
+    id: 2,
+    description: "نقطه ضعف 2",
+  },
+  {
+    id: 3,
+    description: "نقطه ضعف 3",
+  },
+]);
 </script>
 
 <style lang="scss">
 .comment {
   background: #eff9fc;
 }
+
 .left p {
   font-size: 9pt !important;
   margin-bottom: 0;
   line-height: 1.75rem;
 }
+
 .pointer {
   cursor: pointer;
 }
+
 .file {
   text-align: center;
   padding: 3%;
@@ -340,9 +346,11 @@ export default {
   input {
     display: none;
   }
+
   label {
     cursor: pointer;
   }
+
   #imageName {
     color: green;
   }

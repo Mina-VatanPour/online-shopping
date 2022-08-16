@@ -62,33 +62,10 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
- const orderDetails = ref([
-      {
-        date: "14 مرداد 1400",
-        orderCode: 123456789,
-        price: "5,087,000 ریال",
-        discount: "250,000  ریال",
-        picture1: "order2.jpg",
-        picture2: "order1.png",
-      },
-      {
-        date: "30 مهر 1400",
-        orderCode: 123456789,
-        price: "5,087,000 ریال",
-        discount: "250,000  ریال",
-        picture1: "order2.jpg",
-        picture2: "order1.png",
-      },
-      {
-        date: "12 دی 1400",
-        orderCode: 123456789,
-        price: "5,087,000 ریال",
-        discount: "250,000  ریال",
-        picture1: "order2.jpg",
-        picture2: "order1.png",
-      },
-    ]);
+import { defineProps } from "vue";
+// prop from parent : orderDetails
+const props = defineProps(['order-details']);
+// console.log(props);
 
 </script>
 

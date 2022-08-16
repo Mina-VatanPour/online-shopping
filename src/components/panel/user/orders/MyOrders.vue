@@ -77,7 +77,7 @@
       role="tabpanel"
       aria-labelledby="nav-order-tab"
     >
-       <DeliveredOrders />
+       <DeliveredOrders :order-details="orderDetails"/>
       </div>
     
      <!-- tab Content 3 : Returned orders -->
@@ -123,22 +123,43 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import CurrentOrders from "./CurrentOrders.vue";
 import DeliveredOrders from "./DeliveredOrders.vue";
 import ReturnedOrders from "./ReturnedOrders.vue";
 import CanceledOrders from "./CanceledOrders.vue";
-import OrderDetails from "./OrderDetails.vue";
-export default {
-  name: "MyOrders",
-  components:{
-    CurrentOrders,
-    DeliveredOrders,
-    ReturnedOrders,
-    CanceledOrders,
-    OrderDetails,
-},
-};
+// import OrderDetails from "./OrderDetails.vue";
+import { ref } from "vue";
+
+ const orderDetails = ref([
+      {
+        date: "14 مرداد 1400",
+        orderCode: 123456789,
+        price: "5,087,000 ریال",
+        discount: "250,000  ریال",
+        picture1: "order2.jpg",
+        picture2: "order1.png",
+      },
+      {
+        date: "30 مهر 1400",
+        orderCode: 123456789,
+        price: "5,087,000 ریال",
+        discount: "250,000  ریال",
+        picture1: "order2.jpg",
+        picture2: "order1.png",
+      },
+      {
+        date: "12 دی 1400",
+        orderCode: 123456789,
+        price: "5,087,000 ریال",
+        discount: "250,000  ریال",
+        picture1: "order2.jpg",
+        picture2: "order1.png",
+      },
+    ]);
+
+
+
 </script>
 
 <style scoped lang="scss">

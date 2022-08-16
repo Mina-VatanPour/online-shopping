@@ -225,7 +225,9 @@
                 <li class="nav-item b-bottom">
                   <router-link class="nav-link" :to="{ name: 'weblog' }">
                     <i class="bi bi-layout-text-window me-1"></i>
-                    وبلاگ</router-link
+                    وبلاگ
+                    
+                    </router-link
                   >
                 </li>
                 <!-- document -->

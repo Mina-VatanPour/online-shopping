@@ -1,6 +1,6 @@
 <template>
   <h1>
-    This is weblog
+    <a href="http://webdesigner1996.blogfa.com/" class="btn btn-success">link weblog</a>
   </h1>
 </template>
 
